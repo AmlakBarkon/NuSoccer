@@ -26,13 +26,14 @@ header h2 {
 
 footer {
     background-color: rgb(34,46,64);
-    padding: 20px 0;
+    padding: 20px 0; 
     color: white;
+    padding:100px;
 }
-.footer-about{
+/* .footer-about{
     padding: 100px;
    
-}
+} */
 
 .jumbotron {
     padding: 0;
