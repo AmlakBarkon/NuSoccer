@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+   <link rel="stylesheet" href"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" />
     <link rel="stylesheet" href="styles.css">
     <title>Soccer Activity</title>
 </head>
@@ -21,11 +22,11 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                <div class="col-3 col-sm-3 col-md-2 align-self-center">
                     <img src="img/23.jpeg" class="img-fluid" />
                  </div>
-                <div class="col-8 col-sm-9 col-md-10">
-                    <h1>Youth Soccer</h1>
+                <div class="col-9 col-sm-9 col-md-10">
+                    <h1>Youth NuSoccer</h1>
                 </div> 
                 <div class="colcol-sm-3 align-self-center">
                    
@@ -85,7 +86,7 @@
         </div>
       
         <div class="item carousel-item">
-          <img class="img-fluid" src="img/14.jpg" alt="New york" class="w-100" style="width:100%;">
+          <img class="img-fluid" src="img/shot.jpg" alt="New york" class="w-100" style="width:100%;">
           <div class="carousel-caption d-block d-md-block">
             <h5>Atlanta Goergia</h5>
          
@@ -182,38 +183,92 @@
         </div>
           
 <!-- //////////////////////////////////////////////////////////////////////// -->
+ <!-- modal practice and  amlak -->
+ <div class="modal" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header align-items-center">
+                <button class="close text-center" type="button" data-dismiss="modal">X</button> 
+                <h2 class="modal-title ml-auto">Soccer</h2>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <img src="IMG/kids.jpg" class="w-100" style="width:100%;" alt="mitu">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <p>2018 Accademy vs Parents annual game.
+                              </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                           <p>Mitu and me</p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <img src="IMG/mituamlak.jpg" style="width:200px ; height:200px" alt="mitu">
+                        </div>
 
-        <div class="row row-content align-items-center">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                          <img src="IMG/mituamlak.jpg" style="width:200px ; height:200px" alt="mitu">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ltam illum explicabo repudiandae, facere rerum numquam maxime sint tenetur.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- container div end -->
+               
+                
+            </div> <!-- modal contentend -->                                        
+        </div>
+    </div><!-- <! dialog end here -->
+</div><!-- modal end here÷ -->
+
+        <div id="modal-color" class="row row-content align-items-center">
             <div class="col-sm-3">
                 <h1 class="text-center">U-14</h1>
                 <img class="d-flex mr-3 img-thumbnail" src="img/ka2.jpg" alt="Bootstrap Outfitters" /> 
-                <h1 class="text-center">Instructor Kassahun Taka</h1>
+                <a href="#"> <p class="text-center" data-toggle="modal" data-target="#mymodal">Coach kassahun </p></a>
             </hr>
             </div>
             <div class="col-sm-3">
                 <h1 class="text-center">U-12</h1>
                 <img class="d-flex mr-3 img-thumbnail" src="img/luche3.jpg" alt="Bootstrap Outfitters" /> 
-                <h1 class="text-center">Coach Solomon Luche</h1>
+                <a href="#"> <p class="text-center" data-toggle="modal" data-target="#mymodal">Coach Solomon </p></a>
             </div>
             <div class="col-sm-3">
                 <h1 class="text-center">U-10</h1>
                 <img class="d-flex mr-3 img-thumbnail" src="img/amlak.jpg" alt="Bootstrap Outfitters" /> 
-                <h1 class="text-center">Coach Amlak </h1>
+               <a href="#"> <p class="text-center" data-toggle="modal" data-target="#mymodal">Coach Amlak </p></a>
             </div>
             <div class="col-sm-3">
                 <h1 class="text-center">U-8</h1>
                 <img class="d-flex mr-3 img-thumbnail" src="img/elias.jpg" alt="Bootstrap Outfitters" /> 
-                <h1 class="text-center">Coach Elisa </h1>
+                <a href="#"> <p class="text-center" data-toggle="modal" data-target="#mymodal">Coach Elias</p></a>
             </div>
         </div>
         <!-- end of row -->
         <!-- jumbotron is going here -->
         <div class="jumbotron">
-            <h1 class="display-1">Join Now </h1>
+            <div class="container">
+               <div class="row">
+                    <div class="col-3 col-sm-3">
+                       <img src="IMG/kidsrun.jpg" alt="">
+                    </div>
+                    <div class="col-5 col-sm-5" >
+                       <h1 class="text-danger">Enjoy</h1>      
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <span><img src="IMG/f1.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
             
-             
-            </p>
-          </div>
+        </div>
 
         <div class="row row-content">
             <div class="col-sm-6 mx-auto">
