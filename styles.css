@@ -96,3 +96,15 @@ border: 4px solid black;
         letter-spacing: .5rem;
 
     }
+.reserveButton{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, black, gray, black);
+    color:white;
+    font-size: 14px;
+    padding-right:0px;
+}
+.reserveButton:hover{
+    margin-left:40px;
+}
