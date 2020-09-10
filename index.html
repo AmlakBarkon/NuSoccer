@@ -28,14 +28,93 @@
                 <div class="col-9 col-sm-6 col-md">
                     <h1>Youth NuSoccer</h1>
                 </div> 
-                <div class="col-1 col-sm-3 col-md-1 align-self-center">
-                   <a class="reserveButton btn pt-5" href="#reserveForm">RESERVE</a>
+                <div class="col-1 col-sm-3 col-md-2  align-self-center">
+                  
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Rreserve</button>
                 </div>   
             </div>   
         </div>
     </header>
+
+    <!-- modal reserve start here -->
+      <div class="modal fade registration-style-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-dialog modal-lg  modal-dialog-centered"  role="document">
+           
+          <div class="modal-content" >
+            <div class="modal-header bg-info">
+              <h5 class="modal-title " id="reserveForm">Registration</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+                 <form id="reserveForm" >
+                    <div class="form-group row align-items-center">
+                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                        </div>
+                        <div class="col-7">
+                            <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="form-group row align-items-center">
+                        <div class="col-12 col-sm-6 form-group">
+                            <label for="numCampers" >Kid Age</label>
+                        </div>
+                      
+                         <div class="col col-sm align-items-center">
+                              <select class="form-control" name="numcampers" id="numCampers">
+                                  <option Selected>Age Group</option>
+                                  <option value="1">13 And 14</option>
+                                  <option value="2">11 AND 12</option>
+                                  <option value="3">9 AND 10</option>
+                                  <option value="4">7 AND 8</option>
+                                
+                              </select>
+                          </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-12 col-sm-6">
+                            <label for="date">Date</label>
+                        </div>
+                        <div class="col col-sm-6">
+                            <input class="form-control" type="date" name="date" id="date" placeholder="date">
+                        </div>
+                        
+                     </div>
+                 </form>
+            </div>
+            <div class="modal-footer align-self-center ">
+              <button type="button" class="btn btn-secondary btn-lg" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- modal reserve end here -->
    <!-- nav start here  --> 
-   
+ 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <a class="navbar-brand" href="#"><img src="img/soccer1.jpg" height="90" width="40" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
@@ -61,53 +140,47 @@
 
     </nav> <!--nav end here ////////////////  -->
    <!-- modal for nav login is below -->
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title ml-auto">Login</h2>
-                    <button type="button" class="close" data-dismiss="modal"> &times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form >
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                     <label class="sr-only" for="loginEmail">Email address</label>
-                                      <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword">Password</label>
-                                     <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="form-group col-12">
-                                    <div class="form-check text-center">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label ml-4"> Remember me</label>
-                                    </div>
-                               </div>                             
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 text-center">
-                                    <button type="button" class="btn btn-danger btn-md ml-auto m-3"  data-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-primary btn-md"  data-dismiss="modal">Sign In</button>
-                                </div>
-                                
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-12 text-center">
-                                   <h2>See you on the field</h2>
-                                </div>
-                                
-                            </div>
-
-                       </form>
-                    </div>
-                </div>
-            </div>       
+   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+    <div class="modal-dialog "  role="document">
+      <div class="modal-content" style="border-radius: 50px">
+        <div class="modal-header bg-info">
+          <h5 class="modal-title" id="exampleModalLabel">LogIn</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body" >
+            <div class="container-fluid">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label class="sr-only" for="loginEmail">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                        </div>
+                        <div class="form-group col-12">
+                            <label class="sr-only" for="loginPassword">Password</label>
+                            <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label"> Remember me</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row form-group">
+                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+      </div>
     </div>
+  </div>
     <!-- modal nav end here -->
+    <!-- carousel for slide image start here -->
 <div class="container">
    
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -168,6 +241,7 @@
         <span class="glyphicon glyphicon-chevron-right"></span>
         <span class="sr-only">Next</span>
       </a>
+
     </div>
   </div>
     <!-- carousel end here -->
@@ -236,19 +310,19 @@
 <!-- //////////////////////////////////////////////////////////////////////// -->
  <!-- modal practice and  amlak -->
  <div class="modal" id="mymodal">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header align-items-center">
-                <button class="close text-center" type="button" data-dismiss="modal">X</button> 
-                <h2 class="modal-title ml-auto">Soccer</h2>
+            <div class="modal-header">
+                <button class="close ml-auto" type="button" data-dismiss="modal">X</button> 
+                <h2 class="modal-title">Hello </h2>
             </div>
             <div class="modal-body">
-                <div class="container">
+                <div class="container ">
                     <div class="row">
                         <div class="col-12 col-sm-6">
                             <img src="IMG/mituamlak.jpg" class="w-100" style="width:100%;" alt="mitu">
                         </div>
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6 align-self-center">
                             <p>My Name is Amlak. I live in Atlanta Goergia. I grow up playing soccer.
                                 My soccer carrier took me up to College leavel. Because I have passion and love
                                 soccer, I took U.S Soccer course and achived C Lisnces. I am a Web Developer but
@@ -258,7 +332,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-sm-6">
+                        <div class="col-12 col-sm-6 align-self-center">
                            <p>MSI Coach and Staff</p>
                            <p>Anual parent vs stuff game 2018</p>
                         </div>
@@ -271,8 +345,18 @@
                         <div class="col-12 col-sm-6">
                           <img src="IMG/barkon.jpg" style="width:200px ; height:200px" alt="mitu">
                         </div>
+                        <div class="col-12 col-sm-6 align-self-center">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ltam illum explicabo repudiandae, facere rerum numquam maxime sint tenetur.</p>
+                        </div>
+
+                    </div>
+                    <div class="row">
                         <div class="col-12 col-sm-6">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ltam illum explicabo repudiandae, facere rerum numquam maxime sint tenetur.</p>
+                        </div>
+                        <div class="col-12 col-sm-6 align-self-center">
+                          
+                            <img src="img/kas.jpg" style="width:200px ; height:200px" alt="mitu">
                         </div>
 
                     </div>
