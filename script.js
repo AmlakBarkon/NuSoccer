@@ -1,4 +1,6 @@
-console.log("javascript is working")
-$('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
+// console.log("java works fine")
+// $(document).ready(function(){
+//   setTimeout(function(){
+//     $("#exampleModal").modal('show');
+//   })
+// },2000)
